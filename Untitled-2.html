@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mera Live Page</title>
+  
+  <style>
+    /* Dark Theme Background aur Text Styling */
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 60px;
+      color: #ffffff;
+    }
+    
+    h1 {
+      color: #4da6ff;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: #cccccc;
+      font-size: 18px;
+    }
+    
+    /* Stylish Button Design */
+    .my-btn {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .my-btn:hover {
+      background-color: #005999;
+      transform: translateY(-2px);
+    }
+
+    /* Popup Box ki Design (Dark Theme ke mutabiq) */
+    .popup-box {
+      display: none; /* Shuru mein chhupa rahega */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      border: 2px solid #4da6ff;
+      z-index: 1000;
+      color: #ffffff;
+      width: 300px;
+    }
+
+    .popup-box h2 {
+      color: #4da6ff;
+      margin-bottom: 10px;
+    }
+
+    .close-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .close-btn:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Click Me Button -->
+  <button class="my-btn" onclick="showPopup()">Click Me!</button>
+
+  <!-- Main Content -->
+  <h1>Mera Naam KHUDA BUX DAHRI Hai!</h1>
+  <p>Main apna pehla live code chala raha hoon!</p>
+
+  <!-- Stylish Popup Box -->
+  <div id="myPopup" class="popup-box">
+    <h2>✨ Welcome! ✨</h2>
+    <p>Salam! Khuda Bux Dahri ki website par aapka khair-maqdam hai. Aapne bohot zabardast kaam kiya hai!</p>
+    <button class="close-btn" onclick="closePopup()">Band Karein</button>
+  </div>
+
+  <!-- JavaScript Code -->
+  <script>
+    function showPopup() {
+      document.getElementById("myPopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("myPopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
